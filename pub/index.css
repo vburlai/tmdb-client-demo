@@ -1,0 +1,11 @@
+#page {
+    padding: 2% 2%;
+}
+
+#tmdb {
+    padding: 20px 0;
+}
+
+#tmdb img {
+    max-width: 300px;
+}
