@@ -1,0 +1,11 @@
+.borderless {
+    border: none;
+}
+
+.borderless:hover,
+.borderless:active,
+.borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
