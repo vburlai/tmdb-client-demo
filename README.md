@@ -2,6 +2,8 @@
 
 The Movie DB client demo
 
+<img src=screenshot.jpg width=300>
+
 # Getting started
 
 ## Install dependencies
