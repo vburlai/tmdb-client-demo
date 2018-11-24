@@ -1,0 +1,8 @@
+{
+    "watch": ["app", "pub", "src"],
+    "events": {
+        "start": "npm run build",
+        "restart": "npm run build"
+    },
+    "ext": "js,jsx,html,css,ts,tsx"
+}

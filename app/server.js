@@ -10,7 +10,10 @@ const requestHandler = secrets => (request, response) => {
     const url = URL.parse(request.url, true)
     const context = { url, secrets, request, response }
 
-    if (url.pathname.substring(0, 5) === '/pub/') {
+    if (
+        url.pathname.substring(0, 5) === '/pub/' ||
+        url.pathname.substring(0, 5) === '/dst/'
+    ) {
         staticFilesHandler(context)
     } else {
         switch (url.pathname) {

@@ -35,6 +35,25 @@ describe('server', () => {
         })
     })
 
+    describe('[pathname starts with /dst/]', () => {
+        beforeAll(() => {
+            pathname = '/dst/test.html'
+            url.parse.mockReturnValue({
+                pathname,
+            })
+            server(secrets)('request', 'response')
+        })
+
+        test('should call staticFilesHanlder()', () => {
+            expect(staticFilesHandler).toHaveBeenCalledWith({
+                request: 'request',
+                response: 'response',
+                secrets: { key: 'secret' },
+                url: { pathname },
+            })
+        })
+    })
+
     describe("[pathname === '/']", () => {
         beforeAll(() => {
             pathname = '/'
