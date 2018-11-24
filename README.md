@@ -2,7 +2,7 @@
 
 The Movie DB client demo
 
-<img src=screenshot.jpg width=300>
+<img src=https://raw.githubusercontent.com/vburlai/tmdb-client-demo/master/screenshot.png width=300>
 
 # Getting started
 
